@@ -1,0 +1,15 @@
+/*A mobile-first approach to styling means that styles are applied first to mobile devices. Advanced styles and other overrides for larger screens are then added into the stylesheet via media queries.
+This approach uses min-width media queries.*/
+
+/*Code for larger screens is usually more complicated than the codes for smaller screens. This is why coding mobile first helps simplify your code.*/
+
+.content {
+	background-color: blue;
+}
+
+@media(min-width: 800px) {
+	.content {
+		float: left;
+		width: 66%;
+	}
+}

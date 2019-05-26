@@ -1,0 +1,19 @@
+/*On the flipside, a desktop-first approach to styling means that styles are applied first to desktop devices. Advanced styles and overrides for smaller screens are then added into the stylesheet via media queries.This approach uses max-width media queries.*/
+
+/*Code for larger screens is usually more complicated than the codes for smaller screens. This is why coding mobile first helps simplify your code.*/
+
+/*Most of the time min-width queries would be enough to help you code a website. There are however instances where a combination of both min-width and max-width queries helps to reduce complications that pure min-width queries cannot hope to achieve.*/
+
+.content {
+	float: left;
+	width: 66%;
+	background-color: blue;
+	height: 100p;
+}
+
+@media(max-width: 600px) {
+	.conent {
+		float: none;
+		width: 100%;
+	}
+}
